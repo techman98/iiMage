@@ -1,0 +1,51 @@
+
+
+.pfpImage {
+    height: 150px;
+    border-radius: 50%;
+    width : 150px;
+    align-content: center;
+}
+
+
+/* XNavClass {
+  color: red;
+} */
+/* 
+root: {
+  flexGrow: 1,
+},
+grow: {
+  flexGrow: 1,
+},
+menuButton: {
+  marginLeft: -12,
+  marginRight: 20,
+/* }, */
+/* TitleName {
+  color: black,
+}
+LoginButton {
+  marginLeft: 12,
+  marginRight: 20,
+} */ 
+
+.NavBarEdit{
+  background-color: #2bbbad;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+.navbar-light .navbar-brand{
+  color:white;
+}
+
+
+.navSpan{
+  color: aliceblue;
+}
+span:hover{
+  color:  orange;
+}
+span:active{
+  color:blue;
+}

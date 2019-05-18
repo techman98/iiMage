@@ -1,0 +1,16 @@
+.LogForm{
+    margin-top: 14%;
+    /* background-color: aqua; */
+}
+.SignUpLink{
+    text-align: center;
+    margin-top: 4%;
+}
+
+@media only screen and (max-width: 600px) {
+    .LogForm{
+       
+        margin-top: 50%;
+        /* background-color: gold; */
+    }
+}
