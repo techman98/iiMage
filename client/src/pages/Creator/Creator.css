@@ -1,4 +1,9 @@
 .grid {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8,1fr);
     display: grid;
+}
+
+.Bio{
+    border: black solid 5px;
+    width: 100%;
 }

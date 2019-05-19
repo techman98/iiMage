@@ -12,38 +12,26 @@ import './Creator.css';
 
 
 class Creator extends Component {
-  state = {
-    array: ['X', 'PageTwo', 'Array'],
-    string: 'XPageTwoString',
-  };
+
 
   fileSelectedHandler = event => {
     console.log(event.target);
   }
 
-  componentDidMount() {
-    API.getDocuments()
-      .then((res) => { console.log(res.data) })
-      .catch((err) => console.log(err));
-  }
-
   render() {
-
     return (
     <div>
-      <h1>Creator Profile Page</h1>
       <div className = "grid">
+        <div className="Bio">
+          <p>Hi my name is Tyler, I like taking pictures and editing them to create unique moments captured in history for those who have hired me. whjefhjegfehwjbfewhjbfew fhejbfehjwbfehjfbejhw dwhjbewhjfbewhjbhjb wejhbehjb</p>
+        </div>
         {categories.map((category, i) => (
-          <Image {...category} key = {i} url = {categories[i].image} text = {categories[i].category} />
+          <Image className="Image" {...category} key = {i} url = {categories[i].image} text = {categories[i].category} />
           ))}
-          <ImageUpload />
-          {/* <Email /> */}
-          </div> 
-
+          <ImageUpload className="Upload"/>
+      </div> 
     </div>
-    
     );
-
   }
 }
 

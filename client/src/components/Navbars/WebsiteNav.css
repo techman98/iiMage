@@ -7,6 +7,9 @@
     align-content: center;
 }
 
+.SortButton {
+  color : #000000;
+}
 
 /* XNavClass {
   color: red;
