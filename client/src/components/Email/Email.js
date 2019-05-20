@@ -8,15 +8,26 @@ class Email extends React.Component {
             recipient: '',
             sender: '',
             subject: '',
-            text: ''
+            text: '',
+            sent: ''
         }
     }
-    
+
     sendEmail = () => {
         const { email } = this.state;
         //this might be where i get the email & username from okta
-        fetch(`http://127.0.0.1:3000/send-email?recipient=${email.recipient}&sender=${email.sender}&topic=${email.subject}&text=${email.text}`) //query string url
+        fetch(`http://localhost:3000//send-email?recipient=${email.recipient}&sender=${email.sender}&topic=${email.subject}&text=${email.text}`) //query string url
             .catch(err => console.error(err))
+        this.setState(state => ({
+            email: {
+                recipient: '',
+                sender: '',
+                subject: '',
+                text: '',
+                sent: 'Message sent!'
+            }
+
+        }))
     }
     render() {
         const { email } = this.state;
@@ -50,6 +61,7 @@ class Email extends React.Component {
                     <textarea rows={3} value={email.text} style={textArea}
                         onChange={e => this.setState({ email: { ...email, text: e.target.value } })} />
                     <div style={spacer} />
+                    <p onClick={this.sendEmail}>{email.sent}</p>
                     <button onClick={this.sendEmail}> Send Email </button>
                 </div>
             </div>
