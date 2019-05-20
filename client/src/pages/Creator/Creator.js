@@ -24,7 +24,7 @@ class Creator extends Component {
     <div>
       <div className = "grid">
         <div className="Bio">
-          <p>Hi my name is Tyler, I like taking pictures and editing them to create unique moments captured in history for those who have hired me. </p>
+          <p>Hi my name is Tyler, I like taking pictures with my Nikon D750. This started as a hobby, but I  now have five years experience in the photography business. I edit my photos on Adobe Photoshop & Illustrator. Shoot me an email if you're interested in my services. </p>
           <Email />
         </div>
         {categories.map((category, i) => (

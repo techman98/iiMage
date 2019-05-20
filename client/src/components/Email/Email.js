@@ -5,7 +5,7 @@ import React from 'react';
 class Email extends React.Component {
     state = {
         email: {
-            recipient: '',
+            recipient: 'wizmar.tyler@gmail.com',
             sender: '',
             subject: '',
             text: '',
@@ -20,7 +20,7 @@ class Email extends React.Component {
             .catch(err => console.error(err))
         this.setState(state => ({
             email: {
-                recipient: '',
+                recipient: 'wizmar.tyler@gmail.com',
                 sender: '',
                 subject: '',
                 text: '',
@@ -40,7 +40,7 @@ class Email extends React.Component {
         return (
             <div className="App">
                 <div style={{ marginTop: 10 }} >
-                    <h2> Send Email </h2>
+                    <h3> Send Email </h3>
                     <label> Recipient </label>
                     <br />
                     <input value={email.recipient}
