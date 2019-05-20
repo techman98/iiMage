@@ -38,7 +38,7 @@ class App extends Component {
           <Route exact path='/Client' component={Client} />
           <Route exact path='/Creator' component={Creator} />
 
-          <Route exact path='/XCollection/:id' component={XCollection} />
+          <Route exact path='/XCollection/' component={XCollection} />
           <Route component={XNoMatch} />
         </Switch>
       </React.Fragment>
