@@ -1,22 +1,34 @@
-import React, { Component } from 'react';
+import React from 'react';
+import "./email.css"
 
-state = {
-    email: {
-        recipient: '',
-        sender: '',
-        subject: '',
-        text: ''
+
+class Email extends React.Component {
+    state = {
+        email: {
+            recipient: 'wizmar.tyler@gmail.com',
+            sender: '',
+            subject: '',
+            text: '',
+            sent: ''
+        }
     }
-}
 
-sendEmail = () => {
-    const { email } = this.state;
-    //this might be where i get the email & username from okta
-    fetch(`http://127.0.0.1:3000/send-email?recipient=${email.recipient}&sender=${email.sender}&topic=${email.subject}&text=${email.text}`) //query string url
-        .catch(err => console.error(err))
-}
+    sendEmail = () => {
+        const { email } = this.state;
+        //this might be where i get the email & username from okta
+        fetch(`http://localhost:3000//send-email?recipient=${email.recipient}&sender=${email.sender}&topic=${email.subject}&text=${email.text}`) //query string url
+            .catch(err => console.error(err))
+        this.setState(state => ({
+            email: {
+                recipient: 'wizmar.tyler@gmail.com',
+                sender: '',
+                subject: '',
+                text: '',
+                sent: 'Message sent!'
+            }
 
-class Email extends Component {
+        }))
+    }
     render() {
         const { email } = this.state;
         const spacer = {
@@ -28,7 +40,7 @@ class Email extends Component {
         return (
             <div className="App">
                 <div style={{ marginTop: 10 }} >
-                    <h2> Send Email </h2>
+                    <p> Send Tyler an Email </p>
                     <label> Recipient </label>
                     <br />
                     <input value={email.recipient}
@@ -49,6 +61,7 @@ class Email extends Component {
                     <textarea rows={3} value={email.text} style={textArea}
                         onChange={e => this.setState({ email: { ...email, text: e.target.value } })} />
                     <div style={spacer} />
+                    <p onClick={this.sendEmail}>{email.sent}</p>
                     <button onClick={this.sendEmail}> Send Email </button>
                 </div>
             </div>

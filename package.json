@@ -63,5 +63,14 @@
     "react-transition-group": "^4.0.1",
     "reactstrap": "^8.0.0",
     "request": "^2.88.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techman98/iiMage.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/techman98/iiMage/issues"
+  },
+  "homepage": "https://github.com/techman98/iiMage#readme"
 }

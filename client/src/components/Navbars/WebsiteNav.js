@@ -59,8 +59,7 @@ class Example extends React.Component {
   render() {
     return (
 
-      //these links will take you to called page
-      //set them up so that this happens when specific btn is clicked
+
       <Router>
         <div>
 
