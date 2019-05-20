@@ -4,6 +4,7 @@ import "../Card/Post.css"
 import { MDBBtn } from 'mdbreact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+
 const Card = props => (
     <article className="Post">
     <header>

@@ -10,6 +10,7 @@ import Email from '../../components/Email'
 import categories from './categories';
 import './Creator.css';
 import Footer from '../../components/Footer'
+import Folder from '../../components/Folder'
 // import '../../components/Email/Email'
 
 
