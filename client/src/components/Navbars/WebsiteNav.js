@@ -77,18 +77,16 @@ class Example extends React.Component {
 
           <div>
 
-            <Navbar className="NavBarEdit" light expand="md">
-              <NavbarBrand href="/"><FontAwesomeIcon icon="stroopwafel" /> iiMage</NavbarBrand>
+            <Navbar className="NavBarEdit"  light expand="md">
+              <NavbarBrand  href="/"><span className="brand"><FontAwesomeIcon className="navIcon" icon={['fa', 'camera-retro']} /> iiMage</span></NavbarBrand>
               {profiles[this.props.location.pathname.split("/")[2] - 1] ? <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}><img className="pfpImage" src={profiles[this.props.location.pathname.split("/")[2] - 1].profile} /></div> : null}
               <NavbarToggler onClick={this.toggle} />
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav pills className="ml-auto" navbar>
                   <NavItem className="navItem">
-                    {/* <Link to="/"><NavLink className="NavItem" href="/"><span className="navSpan">Home</span></NavLink></Link> */}
                     <NavLink onClick={() => this.props.history.push('/')}>Home</NavLink>
                   </NavItem>
                   <NavItem>
-                    {/* <Link onClick={() => this.props.history.push('/Explore')} to="/Explore">Explore</Link>> */}
                     <NavLink onClick={() => this.props.history.push('/Explore')}>Explore</NavLink>
                   </NavItem>
                   <NavItem>
@@ -97,14 +95,12 @@ class Example extends React.Component {
                   <NavItem>
                     <NavLink onClick={() => this.props.history.push('/Login')}>Login</NavLink>
                   </NavItem>
-
                 </Nav>
               </Collapse>
             </Navbar>
           </div>
         </div>
       </Router>
-
     );
   }
 }

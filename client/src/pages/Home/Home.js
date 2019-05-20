@@ -5,8 +5,13 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Jumbo from '../../components/Jumbotron/Jumbo'
 import { Container, Row, Col } from 'reactstrap';
+
+import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+import { faAtom } from '@fortawesome/free-solid-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
 import Footer from '../../components/Footer'
 
+library.add(faAtom)
 
 class Home extends Component {
 
@@ -14,30 +19,45 @@ class Home extends Component {
     return (
       <div >
         <Jumbo />
-        <Container>
+        <Container fluid>
           <Row>
             {/* this one is missing xs=4 was playing with some stuff */}
-            <Col xs="4" md={{ span: 3, offset: 0 }}>
-              <FontAwesomeIcon className="icon" icon="stroopwafel" />
+            <Col xs="4" md={{ span: 0, offset: 0 }}>
+              <FontAwesomeIcon className="icon" icon={['fa', 'book']}  />
               <br />
               <br />
-              <p className="paragraph">iiMage is a photo sharing and storing website. We understand that each photo you take represents a split-second in time that can never be recaptured. That photo has the potential to shape memories for generations to come. By storing and sharing your photos on our website, you're given the confidence of never losing your photos!</p>
+
+              <h2 className="underTitle">About</h2>
+              <p className="paragraph">iiMage is an image hosting platform that allows creators to share their photography work with clients and other creators.
+With a membership clients are also able to interact with other clients and creaters based on common interests.
+iiMage is the best way to check out new content, contact creators, and meet the up and comers of photography today.</p>
+
             </Col>
 
 
-            <Col xs="4" >
-              <FontAwesomeIcon className="icon" icon="stroopwafel" />
+            <Col xs="4" md={{ span: 0, offset: 0 }} >
+              <FontAwesomeIcon className="icon" icon={['fa', 'binoculars']} />
               <br />
               <br />
-              <p className="paragraph">Creators are what sets iiMage apart from other photo storing/sharing websites. Here, creators are able to use their skills to help others. They can provide photoshop and photography services for our clients. Essentially, we want you to get paid for your talent and use iiMage as a motivation to improve your skills. </p>
+
+              <h2 className="underTitle">Explore</h2>
+              <p className="paragraph">iiMage allows creators and clients to explore the talent of other creators. 
+When using Explore in iiMage a user can interact with all creators or can narrow down their search based off of talent level.
+Simply click the Explore button and be transported to a world of life through others eye spoken to you by their camera lens. </p>
+
             </Col>
 
 
             <Col xs="4">
-              <FontAwesomeIcon className="icon" icon="stroopwafel" />
+              <FontAwesomeIcon className="icon" icon={['fa', 'user-tie']} />
               <br />
               <br />
-              <p className="paragraph">Clients are our service-seekers. Our clients can create a profile where they store their photos in customized folders and can share via links. Additionally, they can contact our creators directly though email to negotiate services. With iiMage, you can contact creators ranging from beginners to experts who can capture your iiMage how you pictured it. </p>
+
+              <h2 className="underTitle">Creators & Clients</h2>
+              <p className="paragraph"> With iiMage creators images can be stored and displayed with ease through one platform. 
+Wether it is to share with the world your wonderful trip to India or your univeristies graduation, iiMage will house the photos on your website.
+Clients are able to sift through the many creators content and interact with said creators. </p>
+
             </Col>
 
           </Row>
