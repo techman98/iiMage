@@ -8,6 +8,7 @@ import Login from './pages/Login'
 import SignUp from './pages/SignUp'
 import Client from './pages/Client'
 import Creator from './pages/Creator'
+
 // import Anime from 'react-anime'
 
 import XCollection from './pages/XCollection'

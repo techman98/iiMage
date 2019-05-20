@@ -3,6 +3,7 @@ import React from "react";
 import "../Card/Post.css"
 
 
+
 const Card = props => (
     <article className="Post">
     <header>
