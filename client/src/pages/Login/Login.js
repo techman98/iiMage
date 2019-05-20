@@ -3,8 +3,8 @@ import API from "../../utils/API";
 import { Link } from "react-router-dom";
 import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
 import "./Login.css"
-import folderApi from '../../utils/foldersAPI'
-// import {withAuth} from '@okta/okta-react'
+
+// import { Login } from '../../components/auth/Login'
 class Login extends Component {
 
 
@@ -74,8 +74,6 @@ class Login extends Component {
         </MDBRow>
         <div className="SignUpLink"><a href="/SignUp">Don't have an account? Sign up!</a></div>
       </MDBContainer>
-
-
 
 
     </div>);
