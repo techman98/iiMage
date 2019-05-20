@@ -9,10 +9,11 @@ import { Container, Row, Col } from 'reactstrap';
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
 import { faAtom } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
+import Footer from '../../components/Footer'
 
 library.add(faAtom)
 
-import Footer from '../../components/Footer'
+
 
 
 
