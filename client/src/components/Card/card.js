@@ -26,9 +26,7 @@ const card = [{
     "name": "Tyler Leach",
     "image":"https://files.slack.com/files-tmb/TDV67LNC8-FJG47LP33-fb35582066/ty_720.jpg",
     "icon": "https://files.slack.com/files-tmb/TDV67LNC8-FJG47LP33-fb35582066/ty_720.jpg",
-    "about":"My name is Tyler Leach, I am a Full-Stack Web Developer and an aspiring Computer Science Major/Game Developer. In my free time, I enjoy playing video games and furthering my knowledge and understanding of topics I have yet to grasp. If you ever caught me in public away from the allure of my computer, I would be hanging out with friends doing whatever it is we decide to do.",
-    "github":"https://github.com/techman98/iiMage.git",
-    "linkedin":"https://www.linkedin.com/in/tyler-leach-b006a7174/",
+    "about":"My name is Tyler Leach, I am a Full-Stack Web Developer and an aspiring Computer Science Major/Game Developer. In my free time I enjoy playing video games and furthering my knowledge and understanding in topics I have yet to grasp. My ultimate goal is to become knowledgable in all computer languages and understand everything there is to know about computers.",
     "count": 0
 }]
 
