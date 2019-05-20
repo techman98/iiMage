@@ -6,4 +6,7 @@
 .Bio{
     border: black solid 5px;
     width: 100%;
+    margin: 10px;
+    padding: 10px;
 }
+

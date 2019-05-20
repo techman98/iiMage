@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./email.css"
 
 
 class Email extends React.Component {
@@ -40,7 +40,7 @@ class Email extends React.Component {
         return (
             <div className="App">
                 <div style={{ marginTop: 10 }} >
-                    <h3> Send Email </h3>
+                    <p> Send Tyler an Email </p>
                     <label> Recipient </label>
                     <br />
                     <input value={email.recipient}

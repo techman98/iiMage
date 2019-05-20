@@ -5,15 +5,10 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Jumbo from '../../components/Jumbotron/Jumbo'
 import { Container, Row, Col } from 'reactstrap';
-
-
-
-
+import Footer from '../../components/Footer'
 
 
 class Home extends Component {
-
-
 
   render() {
     return (
@@ -47,17 +42,10 @@ class Home extends Component {
 
           </Row>
         </Container>
-
-
-
-
+      <Footer />
       </div>
-
-
     )
   }
 }
 
-
-//not sure what XPage is..
 export default Home;

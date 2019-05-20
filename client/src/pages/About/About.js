@@ -6,6 +6,7 @@ import card from "../../components/Card/card"
 import "../../pages/About/About.css"
 import Anime from 'react-anime'
 import { counter } from "@fortawesome/fontawesome-svg-core";
+import Footer from '../../components/Footer'
 
 
 
@@ -34,7 +35,9 @@ class About extends Component {
               icon={card.icon}
             />
           ))}
+
         </div>
+        <Footer />
       </Anime>);
   }
 }
