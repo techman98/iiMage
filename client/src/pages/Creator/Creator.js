@@ -9,6 +9,7 @@ import Email from '../../components/Email'
 
 import categories from './categories';
 import './Creator.css';
+import Footer from '../../components/Footer'
 // import '../../components/Email/Email'
 
 
@@ -32,6 +33,8 @@ class Creator extends Component {
           ))}
           <ImageUpload className="Upload"/>
       </div> 
+
+      <Footer />
     </div>
     );
   }

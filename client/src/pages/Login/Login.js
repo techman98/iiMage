@@ -3,43 +3,14 @@ import API from "../../utils/API";
 import { Link } from "react-router-dom";
 import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
 import "./Login.css"
+import Footer from '../../components/Footer'
+import Creator from '../Creator/Creator'
+
+
 
 // import { Login } from '../../components/auth/Login'
 class Login extends Component {
 
-
-  //   state = {
-  //   array: ['X', 'Page', 'Array'],
-  //   string: 'XPageString',
-  //   authenticated: null
-  // };
-  
-  // checkAuthentication = async () => {
-  //   const authenticated = await this.props.auth.isAuthenticated();
-  //   if (authenticated !== this.state.auth) {
-  //     this.setState({ authenticated })
-  //   }
-  // }
-  
-  // componentDidMount = async ()=> {
-  //   this.checkAuthentication()
-  
-  //   folderApi.getAllFolders()
-  //     .then((res) => { console.log(res.data) })
-  //     .catch((err) => console.log(err));
-  // }
-  
-  // componentDidUpdate = async () => {
-  //   this.checkAuthentication()
-  // }
-  
-  // login = async () => {
-  //   this.props.auth.login('/')
-  // }
-  
-  // logout = async () => {
-  //   this.props.auth.logout('/')
-  // }
 
   render() {
     return (<div>
@@ -67,7 +38,9 @@ class Login extends Component {
                 />
               </div>
               <div className="text-center">
-                <MDBBtn>Login</MDBBtn>
+                <Link to="/Creator">
+                  <MDBBtn >Login</MDBBtn>
+                </Link>
               </div>
             </form>
           </MDBCol>
@@ -75,7 +48,7 @@ class Login extends Component {
         <div className="SignUpLink"><a href="/SignUp">Don't have an account? Sign up!</a></div>
       </MDBContainer>
 
-
+      {/* <Footer /> */}
     </div>);
   }
 }
