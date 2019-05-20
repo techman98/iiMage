@@ -67,6 +67,10 @@
       opacity: 0;
     }
 
+    .aboutButton{
+      color:white;
+    }
+
     @media only screen and (max-width: 600px) {
       .Post {
         /* border-radius: 3px;

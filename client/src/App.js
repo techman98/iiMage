@@ -18,9 +18,9 @@ import WebsiteNav from './components/Navbars/WebsiteNav';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStroopwafel, faUserTie, faBook, faBinoculars, faCameraRetro  } from '@fortawesome/free-solid-svg-icons'
-
-library.add(faStroopwafel, faUserTie, faBook, faBinoculars, faCameraRetro)
+import {  faStroopwafel, faUserTie, faBook, faBinoculars, faCameraRetro,  } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+library.add( faLinkedin,faGithub, faStroopwafel, faUserTie, faBook, faBinoculars, faCameraRetro)
 
 
 
