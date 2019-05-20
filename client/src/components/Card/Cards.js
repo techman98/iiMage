@@ -23,8 +23,7 @@ const Card = props => (
     <div className="Post-caption">
         <strong><h3>{props.name}</h3></strong>
         <br></br>
-        About Me
-        <br></br>
+
         <p>{props.about}</p>
     </div>
 </article>
