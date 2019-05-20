@@ -3,6 +3,8 @@ import API from "../../utils/API";
 import { Image } from '../../components/Image';
 import profiles from './profiles.js';
 import CreatorNav from '../../components/Navbars/CreatorNav';
+import Footer from '../../components/Footer'
+
 class Explore extends Component {
   state = {
     display : [...profiles]
@@ -32,6 +34,7 @@ filterHandler = (level) => {
           <Image {...person} id={person.id} key = {i} url = {person.profile} />
         ))}
       </div>
+      {/* <Footer /> */}
     </div>);
   }
 }
