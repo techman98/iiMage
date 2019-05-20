@@ -29,21 +29,21 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar className="NavBarEdit" light expand="md">
+        <Navbar className="creatorNav" color="" light expand="md">
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink className="SortButton" onClick={() => this.props.filterHandler("All")}>Show All</NavLink>
+                <NavLink onClick={() => this.props.filterHandler("All")}>Show All</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="SortButton" onClick={() => this.props.filterHandler("Beginner")}>Beginner Creator</NavLink>
+                <NavLink onClick={() => this.props.filterHandler("Beginner")}>Beginner Creator</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="SortButton" onClick={() => this.props.filterHandler("Intermediate")}>Intermediate Creator</NavLink>
+                <NavLink  onClick={() => this.props.filterHandler("Intermediate")}>Intermediate Creator</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="SortButton" onClick={() => this.props.filterHandler("Advanced")}>Advanced Creator</NavLink>
+                <NavLink onClick={() => this.props.filterHandler("Advanced")}>Advanced Creator</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

@@ -1,58 +1,23 @@
-
-
 .pfpImage {
-    height: 150px;
-    border-radius: 50%;
-    width : 150px;
-    align-content: center;
+  height: 150px;
+  border-radius: 50%;
+  width: 150px;
+  align-content: center;
 }
-
-.SortButton {
-  color : #000000;
-}
-
-/* XNavClass {
-  color: red;
-} */
-/* 
-root: {
-  flexGrow: 1,
-},
-grow: {
-  flexGrow: 1,
-},
-menuButton: {
-  marginLeft: -12,
-  marginRight: 20,
-/* }, */
-/* TitleName {
-  color: black,
-}
-LoginButton {
-  marginLeft: 12,
-  marginRight: 20,
-} */ 
-
-.NavBarEdit{
-  background-color: #2bbbad;
+.NavBarEdit {
+  background-color: #33b5e5!important;
+  color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
 }
-.navbar-light .nav-link .navbar-brand{
-  color:white;
+.navbar-light .nav-link .navbar-brand {
+  color: white;
 }
 .navbar.navbar-light .navbar-nav .nav-item .nav-link {
   color: white;
-
 }
-
-
-.navSpan{
-  color: aliceblue;
+.brand {
+  color: white;
 }
-span:hover{
-  color:  orange;
-}
-span:active{
-  color:blue;
+span:hover {
+  color: black;
 }
