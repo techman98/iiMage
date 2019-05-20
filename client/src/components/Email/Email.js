@@ -1,22 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-state = {
-    email: {
-        recipient: '',
-        sender: '',
-        subject: '',
-        text: ''
+
+
+class Email extends React.Component {
+    state = {
+        email: {
+            recipient: '',
+            sender: '',
+            subject: '',
+            text: ''
+        }
     }
-}
-
-sendEmail = () => {
-    const { email } = this.state;
-    //this might be where i get the email & username from okta
-    fetch(`http://127.0.0.1:3000/send-email?recipient=${email.recipient}&sender=${email.sender}&topic=${email.subject}&text=${email.text}`) //query string url
-        .catch(err => console.error(err))
-}
-
-class Email extends Component {
+    
+    sendEmail = () => {
+        const { email } = this.state;
+        //this might be where i get the email & username from okta
+        fetch(`http://127.0.0.1:3000/send-email?recipient=${email.recipient}&sender=${email.sender}&topic=${email.subject}&text=${email.text}`) //query string url
+            .catch(err => console.error(err))
+    }
     render() {
         const { email } = this.state;
         const spacer = {

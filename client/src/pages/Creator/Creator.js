@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import ImageUpload from '../../components/ImageUpload/ImageUpload'
 
 import { Image } from '../../components/Image/Image';
+import Email from '../../components/Email'
 
 import categories from './categories';
 import './Creator.css';
@@ -23,7 +24,8 @@ class Creator extends Component {
     <div>
       <div className = "grid">
         <div className="Bio">
-          <p>Hi my name is Tyler, I like taking pictures and editing them to create unique moments captured in history for those who have hired me. whjefhjegfehwjbfewhjbfew fhejbfehjwbfehjfbejhw dwhjbewhjfbewhjbhjb wejhbehjb</p>
+          <p>Hi my name is Tyler, I like taking pictures and editing them to create unique moments captured in history for those who have hired me. </p>
+          <Email />
         </div>
         {categories.map((category, i) => (
           <Image className="Image" {...category} key = {i} url = {categories[i].image} text = {categories[i].category} />
