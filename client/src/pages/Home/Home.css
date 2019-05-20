@@ -1,11 +1,18 @@
-.col-4{
+.col-4 {
   text-align: center;
 }
 
 .paragraph{
   text-align: left;
+  padding-left: 10%;
+  padding-right:10%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .icon{
   font-size: 80px;
+}
+
+.underTitle{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
