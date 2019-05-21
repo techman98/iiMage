@@ -5,7 +5,7 @@ import "./email.css"
 class Email extends React.Component {
     state = {
         email: {
-            recipient: 'wizmar.tyler@gmail.com',
+            recipient: '',
             sender: '',
             subject: '',
             text: '',
