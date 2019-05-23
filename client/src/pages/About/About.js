@@ -33,6 +33,8 @@ class About extends Component {
               name={card.name}
               about={card.about}
               icon={card.icon}
+              linkedin={card.linkedin}
+              github={card.github}
             />
           ))}
 

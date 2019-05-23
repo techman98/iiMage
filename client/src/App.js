@@ -19,9 +19,10 @@ import WebsiteNav from './components/Navbars/WebsiteNav';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+import {  faStroopwafel, faUserTie, faBook, faBinoculars, faCameraRetro,  } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+library.add( faLinkedin,faGithub, faStroopwafel, faUserTie, faBook, faBinoculars, faCameraRetro)
 
-library.add(faStroopwafel)
 
 
 class App extends Component {
@@ -37,7 +38,7 @@ class App extends Component {
           <Route exact path='/Login' component={Login} />
           <Route exact path='/SignUp' component={SignUp} />
           <Route exact path='/Client' component={Client} />
-          <Route exact path='/Creator' component={Creator} />
+          <Route exact path='/Creator/:id?' component={Creator} />
 
           <Route exact path='/XCollection/' component={XCollection} />
           <Route component={XNoMatch} />
