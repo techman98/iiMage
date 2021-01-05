@@ -39,7 +39,7 @@
     "@types/react-stripe-elements": "^1.1.10",
     "@types/stripe": "^6.25.15",
     "animejs": "^3.0.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bluebird": "^3.5.1",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
